@@ -41,6 +41,9 @@ function check(but_id){
             },
             hideClass: {
               popup: 'animate__animated animate__fadeOutUp'
+            },
+            customClass: {
+                confirmButton: 'Play Again' //insert class here
             }
           }).then(function() {
             location.reload();

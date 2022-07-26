@@ -3,10 +3,10 @@
     height: 100px;
     width: 100px;
     border: none;
-    background-color: aquamarine;
+    background-color: #F37878;
     border-radius: 5px;
     font-size: 3em;
-    color: #D61C4E;
+    color: white;
 }
 .row{
     margin-bottom: 4px;
