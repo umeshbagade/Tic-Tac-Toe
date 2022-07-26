@@ -26,7 +26,7 @@ function check(but_id){
             Winner = oxo[0][c];
         else if(oxo[0][0]===oxo[1][1] && oxo[1][1]===oxo[2][2]&& oxo[1][1]!='A')
             Winner = oxo[1][1];
-        else if(oxo[0][1]===oxo[1][1] && oxo[1][1] === oxo[2][0] && oxo[1][1]!='A')
+        else if(oxo[0][2]===oxo[1][1] && oxo[1][1] === oxo[2][0] && oxo[1][1]!='A')
             Winner = oxo[1][1];
     }
     
