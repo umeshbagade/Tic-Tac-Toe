@@ -2,6 +2,7 @@
 var oxo =[['A','A','A'],['A','A','A'],['A','A','A']];
 
 value = 'O';
+let ct=0;
 function check(but_id){
 
     curr = document.querySelector("#"+but_id);
@@ -14,6 +15,7 @@ function check(but_id){
 
     if(oxo[r][c] ==='A')
     {
+        ct++;
         if(value==='O') value = 'X';
         else value = 'O';
         curr.innerHTML = value;
@@ -49,6 +51,25 @@ function check(but_id){
             location.reload();
           });
         
+    }
+    else if(ct==9)
+    {
+        heading = document.querySelector("#heading");
+        heading.innerHTML = "Oops Match Draw...";
+        Swal.fire({
+            title: heading.innerHTML,
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            },
+            customClass: {
+                confirmButton: 'Play Again' //insert class here
+            }
+          }).then(function() {
+            location.reload();
+          });
     }
 
 }
