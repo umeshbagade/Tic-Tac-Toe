@@ -5,8 +5,6 @@ value = 'O';
 function check(but_id){
 
     curr = document.querySelector("#"+but_id);
-    
-
     n = Number(but_id.slice(1,2));
     n--;
     var r = Math.floor(n/3);
@@ -36,9 +34,11 @@ function check(but_id){
     {
         heading = document.querySelector("#heading");
         heading.innerHTML = "Player "+Winner+" wins";
-        setTimeout(() => {
+        swal("Play Again")
+        .then((value) => {
             location.reload();
-        }, 1000);
+        });
+       
         
     }
 
