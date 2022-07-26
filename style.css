@@ -1,0 +1,28 @@
+button{
+    margin-right: 4px;
+    height: 100px;
+    width: 100px;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-size: 3em;
+    color: #D61C4E;
+}
+.row{
+    margin-bottom: 4px;
+    display: flex;
+}
+.wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 95vh;
+}
+#heading{
+    color: green;
+    position: absolute;
+    margin-top: -355px;
+    text-align: center;
+}
