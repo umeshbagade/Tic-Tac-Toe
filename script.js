@@ -34,11 +34,17 @@ function check(but_id){
     {
         heading = document.querySelector("#heading");
         heading.innerHTML = "Player "+Winner+" wins<span>&#127881;</span>";
-        swal("Play Again")
-        .then((value) => {
+        Swal.fire({
+            title: heading.innerHTML,
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          }).then(function() {
             location.reload();
-        });
-       
+          });
         
     }
 
