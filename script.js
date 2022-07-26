@@ -33,7 +33,7 @@ function check(but_id){
     if(Winner!='A')
     {
         heading = document.querySelector("#heading");
-        heading.innerHTML = "Player "+Winner+" wins";
+        heading.innerHTML = "Player "+Winner+" wins<span>&#127881;</span>";
         swal("Play Again")
         .then((value) => {
             location.reload();
